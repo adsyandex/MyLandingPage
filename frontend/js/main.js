@@ -58,6 +58,7 @@ const contactData = {
     name: 'Виталий Кравченко',
     email: 'haimakrav@gmail.com',
     phone: '+7 (914) 714-79-29',
+    telegram: '@haimakrav',
     hours: 'Пн-Пт: 8:00-17:00'
 };
 
@@ -121,9 +122,10 @@ function renderContactInfo() {
     
     elements.contactInfo.innerHTML = `
         <h3>${contactData.name}</h3>
-        <p><span class="contact-icon">📧</span> ${contactData.email}</p>
-        <p><span class="contact-icon">📱</span> ${contactData.phone}</p>
-        <p><span class="contact-icon">🕒</span> ${contactData.hours}</p>
+        <p><i class="fas fa-envelope contact-icon"></i> ${contactData.email}</p>
+        <p><i class="fas fa-phone contact-icon"></i> ${contactData.phone}</p>
+        <p><i class="fab fa-telegram contact-icon"></i> <a href="https://t.me/haimakrav" target="_blank">@haimakrav</a></p>
+        <p><i class="fas fa-clock contact-icon"></i> ${contactData.hours}</p>
     `;
 }
 

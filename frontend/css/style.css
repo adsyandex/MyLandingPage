@@ -529,3 +529,34 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         margin: 20px 10px;
     }
 }
+/* Иконки для контактов */
+.contact-info i {
+    width: 24px;
+    margin-right: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Официальный цвет Telegram */
+.fa-telegram {
+    color: #0088cc !important;
+}
+
+/* Для всех иконок в контактах */
+.contact-icon {
+    display: inline-block;
+    width: 24px;
+    margin-right: 8px;
+}
