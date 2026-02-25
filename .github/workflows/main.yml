@@ -1,0 +1,48 @@
+name: Deploy Amadeus Site
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Создаём .env из секретов GitHub
+      - name: Create .env file
+        run: |
+          echo "PORT=3000" > .env
+          echo "NODE_ENV=production" >> .env
+          echo "DB_PATH=./backend/database/amadeus.db" >> .env
+
+      # Подготавливаем файлы для деплоя
+      - name: Prepare deployment
+        run: |
+          mkdir -p deploy
+          cp -r backend deploy/
+          cp -r frontend deploy/
+          cp package.json deploy/
+          cp package-lock.json deploy/
+          cp .env deploy/
+
+      # Загружаем артефакт
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: amadeus-site
+          path: deploy/
+          
