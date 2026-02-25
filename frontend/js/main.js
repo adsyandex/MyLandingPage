@@ -172,7 +172,7 @@ async function handleFormSubmit(e) {
     
     try {
         // Try to send to backend if available
-        const response = await fetch('http://localhost:3000/api/requests', {
+        const response = await fetch(`${window.location.origin}/api/requests`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)

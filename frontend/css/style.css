@@ -87,6 +87,19 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('/images/Developmen%20chat-bots1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('/images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -95,10 +108,7 @@ body {
     align-items: center;
     color: var(--white);
     text-align: center;
-    position: relative;
-}
-
-.hero-content {
+    position: relative;.hero-content {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -111,12 +121,14 @@ body {
     margin-bottom: 20px;
     font-weight: 700;
     letter-spacing: -1px;
+    text-align: center;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 30px;
     opacity: 0.95;
+    text-align: center;
 }
 
 .hero-buttons {
