@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Amadeus - Разработка чат-ботов и IT-решений</title>
+    <meta name="description" content="Разработка Telegram-ботов, интеграция с AmoCRM, создание Landing Page, администрирование PostgreSQL и MySQL">
+    <meta name="keywords" content="telegram бот, amoCRM, разработка ботов, landing page, postgresql, mysql">
+    <meta name="author" content="Amadeus Bot">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Amadeus - Ваш помощник в IT-решениях">
+    <meta property="og:description" content="Разработка чат-ботов и интеграция с CRM">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ваш-сайт.ru">
+    <meta property="og:image" content="https://ваш-сайт.ru/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Analytics -->
+    <script src="/config/analytics.js" defer></script>
+</head>
+<body>
+    <!-- Yandex Metrika Noscript -->
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/YOUR_ID" style="position:absolute; left:-9999px;" alt="">
+        </div>
+    </noscript>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Amadeus Bot</h1>
+            <p class="hero-subtitle">Ваш помощник в разработке IT-решений для бизнеса</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Посмотреть услуги</a>
+                <a href="#contact" class="btn btn-secondary">Связаться с менеджером</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="visually-hidden">Наши технологии</h2>
+            <div class="partner-logos" id="partnerLogos"></div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Что я предлагаю</h2>
+            <p class="section-subtitle">Комплексные IT-решения для вашего бизнеса</p>
+            <div class="services-grid" id="servicesGrid"></div>
+        </div>
+    </section>
+
+    <!-- Bot Demo -->
+    <section class="bot-demo" id="botDemo">
+        <div class="container">
+            <h2 class="section-title">Как работает бот</h2>
+            <p class="section-subtitle">Пример диалога с Amadeus Bot</p>
+            
+            <div class="chat-message" id="chatDemo"></div>
+            
+            <div class="text-center">
+                <a href="https://t.me/amadeus_crm_bot" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+                    👉 Попробовать бота
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info" id="contactInfo"></div>
+                
+                <form class="contact-form" id="contactForm">
+                    <h3>Заказать разработку</h3>
+                    
+                    <div class="form-group">
+                        <label for="name" class="visually-hidden">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" class="visually-hidden">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="visually-hidden">Сообщение</label>
+                        <textarea id="message" name="message" placeholder="Опишите вашу задачу" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Отправить заявку
+                    </button>
+                    
+                    <p class="form-note">
+                        Нажимая кнопку, вы соглашаетесь с 
+                        <a href="/privacy.html">политикой конфиденциальности</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Amadeus</h3>
+                    <p>© 2024 Все права защищены</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="/privacy.html">Политика конфиденциальности</a>
+                    <a href="/terms.html">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="notificationModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js" defer></script>
+</body>
+</html>
