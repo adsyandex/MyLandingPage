@@ -233,7 +233,7 @@ function init() {
     renderContactInfo();
     initSmoothScroll();
     
-    // Пока закоментировал, чтобы потом вставить код формы с AmoCRM(после этого закоментированного)
+    // Пока закоментировал, чтобы потом вставить код формы с AmoCRM(в файл html)
     // if (elements.contactForm) {
     //     elements.contactForm.addEventListener('submit', handleFormSubmit);
     // }
