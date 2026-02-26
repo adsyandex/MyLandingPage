@@ -233,14 +233,14 @@ function init() {
     renderContactInfo();
     initSmoothScroll();
     
-    // Event Listeners
-    if (elements.contactForm) {
-        elements.contactForm.addEventListener('submit', handleFormSubmit);
-    }
+    // Пока закоментировал, чтобы потом вставить код формы с AmoCRM(после этого закоментированного)
+    // if (elements.contactForm) {
+    //     elements.contactForm.addEventListener('submit', handleFormSubmit);
+    // }
     
-    if (elements.closeModal) {
-        elements.closeModal.addEventListener('click', hideModal);
-    }
+    // if (elements.closeModal) {
+    //     elements.closeModal.addEventListener('click', hideModal);
+    // }
     
     // Close modal on outside click
     window.addEventListener('click', (e) => {
