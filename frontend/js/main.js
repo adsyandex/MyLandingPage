@@ -55,8 +55,8 @@ const services = [
 ];
 
 const contactData = {
-    name: 'Виталий Кравченко',
-    email: 'haimakrav@gmail.com',
+    name: 'Виталий',
+    email: 'amadeus.cyber@gmail.com',
     phone: '+7 (914) 714-79-29',
     telegram: '@haimakrav',
     hours: 'Пн-Пт: 8:00-17:00'
