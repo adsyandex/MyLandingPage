@@ -55,8 +55,8 @@ const services = [
 ];
 
 const contactData = {
-    name: 'Виталий Кравченко',
-    email: 'haimakrav@gmail.com',
+    name: 'Виталий',
+    email: 'amadeus.cyber@gmail.com',
     phone: '+7 (914) 714-79-29',
     telegram: '@haimakrav',
     hours: 'Пн-Пт: 8:00-17:00'
@@ -233,14 +233,14 @@ function init() {
     renderContactInfo();
     initSmoothScroll();
     
-    // Event Listeners
-    if (elements.contactForm) {
-        elements.contactForm.addEventListener('submit', handleFormSubmit);
-    }
+    // Пока закоментировал, чтобы потом вставить код формы с AmoCRM(в файл html)
+    // if (elements.contactForm) {
+    //     elements.contactForm.addEventListener('submit', handleFormSubmit);
+    // }
     
-    if (elements.closeModal) {
-        elements.closeModal.addEventListener('click', hideModal);
-    }
+    // if (elements.closeModal) {
+    //     elements.closeModal.addEventListener('click', hideModal);
+    // }
     
     // Close modal on outside click
     window.addEventListener('click', (e) => {
